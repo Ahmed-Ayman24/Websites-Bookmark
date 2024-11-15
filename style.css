@@ -1,0 +1,62 @@
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .pt-sans-caption-regular {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-sans-caption-bold {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }      
+  ::selection {
+    background-color:#fec260;
+}
+  body {
+    background-color: #ffe9e9;
+    color: #352e28;
+}
+.title {
+  position: relative;
+  display: inline-block;
+  font-size: 50px;
+  z-index: 1;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  right: 0px;
+  top: 60%;
+  bottom: 0px;
+  background-color: #fec260;
+  transition: all 0.2s;
+}
+.title:hover::after {
+top:30%;
+}
+.bookmark-form {
+border-top: 2px dotted;
+border-bottom: 2px dotted;
+}
+.form-title {
+    background: linear-gradient(to right, #276b3b,#f7e635);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-control:focus {
+    outline: none;
+    border-color:  #fec260 ;
+    box-shadow: 0 0 10px #fec260;
+}
