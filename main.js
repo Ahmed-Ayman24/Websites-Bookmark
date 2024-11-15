@@ -3,6 +3,7 @@ var tableBody = document.getElementById("tableBody");
 var siteNameInput = document.getElementById("siteNameInput");
 var siteUrlInput = document.getElementById("siteUrlInput");
 var webSitesContainer = JSON.parse(localStorage.getItem("webSites")) ?? [];
+displayWebSitesData();
 
 function addProtocol(url) {
     if (!/^https?:\/\//.test(url)) {
